@@ -5,7 +5,7 @@ class HomePage {
 
     render(params) {
         const pageContent = document.getElementById('page-content');
-        const events = app.state.getEvents().slice(0, 3); // Get 3 trending events
+        const events = app.state.getHotEvents().slice(0, 3); // Get 3 trending events
         
         pageContent.innerHTML = `
             <!-- Hero Section -->
